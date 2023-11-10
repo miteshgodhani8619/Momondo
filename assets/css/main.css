@@ -1,0 +1,320 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 15px;
+  border: none;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a { text-decoration: none;}
+/* This is for Common Elemant CSS Start*/
+
+:root {
+
+    --mBlue:#101B37;
+    --white:#FFFFFF;
+    --redsalsa:#FE2E46;
+    --Regalia:#5C327A;
+    --AmericanBlue:#4A3570;
+    --DarkPurple:#201631;
+    --LightPurple:#654DAD;
+    --orange:#f78754;
+    --mintcream:#F8FEFF;
+    --gray:#716E75;
+
+
+    
+    --font12:12px;
+    --font14:14px;
+    --font18:18px;
+    --font22:22px;
+    --font28:28px;
+    --font35:35px;
+    --font52:52px;
+
+    --fontregular:normal;
+    --fontMedium:300;
+    --fontSemiBold:500;
+    --fontBold:bold;
+    
+}
+
+.text-gray {
+  color: var(--gray);
+}
+
+
+
+/*----------- Top Header CSS Class ----------------*/
+.topHeader .container-fluid { background:var(--mBlue); }
+
+a.nav-link, a.nav-link:visited {
+  color: var(--white);
+  font-size: var(--font14);
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link.active, .navbar-nav .show > .nav-link
+{
+  color: var(--redsalsa);
+} 
+
+
+.custom-toggler.navbar-toggler {
+  border-color:  var(--white);
+  box-shadow: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.curruncyMenu img {
+  
+  width: 15px;
+  margin-right: 5px;
+}
+.curruncyMenu .dropdown-menu a.dropdown-item {
+
+  font-size: var(--font14) !important;
+
+}
+ul.curruncyMenu li.nav-item:last-child a {
+  color: #B7EA35;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background:var(--mBlue);
+
+}
+
+/* The hero image */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/banner-01.jpg");
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+.searchForm { background: var(--Regalia);}
+#tab .nav-item { margin-right:2px;}
+#tab .nav-link { color: var(--white); background: var(--AmericanBlue); }
+#tab .nav-link:hover, #tab .nav-link.active { background: var(--redsalsa); }
+.tab-pane ul { margin: 0;}
+.bg-none  {
+  background: none !important;
+  border:none ;
+}
+
+
+.btn-search {
+  padding:30px 17px;
+  background: var(--redsalsa);
+  top:-30px;
+  color:var(--white);
+}
+.btn-search:hover  {
+  color: var(--redsalsa);
+  background: var(--white);
+}
+
+
+.select-custome, .select-custome option {
+  font-size: var(--font12);
+  color: var(--mintcream);
+  background:none;
+  border:0;
+}
+.select-custome option{
+  background: var(--AmericanBlue);
+  border:0 !important;
+}
+.icnsmall, .serch-bottom label {
+  font-size: var(--font12);
+  color: var(--mintcream);
+}
+.serch-bottom .form-check-input { background: none;}
+.serch-bottom label{
+  vertical-align: text-top;
+ }
+ 
+ .funpart {
+  background:linear-gradient(rgba(0,0,0,0.8),rgba(0, 0, 0, 0.8)), url("../img/banner-02.jpg");
+  background-size: cover;
+  background-position: -150% -100%;
+ }
+
+ .funpart .icons {
+  font-size: var(--font35);
+}
+
+.subcrib {
+  background:linear-gradient(rgba(32, 22, 49, 0.8),rgba(32, 22, 49, 0.8)), url("../img/banner-03.jpg");
+  background-size: cover;
+  background-position:  left top;
+ }
+
+ .subcrib .newsEmailInput {
+  background: none;
+  border:var(--white) solid 2px;
+}
+
+.destination {
+  background: var(--DarkPurple);
+}
+
+.destination .card-body b span {
+  color: var(--orange);
+}
+.destination .card {
+  height: 100%;
+}
+
+.estimate {
+  background:url("../img/img-10.jpg") no-repeat, var(--LightPurple) ;
+  background-position:  right bottom;
+
+}
+.border-orange {
+  opacity:1;
+  border-color: var(--orange) !important;
+  width:15% ;
+}
+
+.footerMain {
+  background:linear-gradient(rgba(14, 11, 19, 0.9),rgba(14, 11, 19, 0.9)), url("../img/banner-03.jpg");
+  background-size: cover;
+  background-position:  left top;
+
+}
+
+
+.footerMain a { 
+  color: var(--gray);
+}
+.footerMain a b, .fooContant li a { 
+  font-size: var(--font14);
+   color: var(--white);
+}
+
+.footerMain a:hover b, .footerMain .nationallinks a:hover, .fooContant li a:hover,
+.icnSocial:hover 
+ { 
+  color: var(--redsalsa);
+}
+ 
+.icnImg { width: 15px; vertical-align: middle;}
+
+
+.fooContant li, .social li {
+  padding:0 10px 0 0;
+  display: inline-block;
+}
+.icnSocial { font-size: var(--font28);}
+
+
+
+
+ 
+ @media (max-width: 1200px) {
+ 
+  .btn-sm-search {
+   position: static !important;
+   
+  }
+  .btn-sm-search .btn-search {
+   position: static !important;
+    border-radius:0 !important ;
+    padding:10px 0;
+    width:100% !important;
+  }
+  .funpart .icons {
+    font-size: var(--font35);
+  }
+  .funpart b {
+    font-size: var(--font18);
+  }
+
+
+ }
+
+
+ @media (max-width: 991.98px) {
+ 
+ .btn-sm-search {
+  position: static !important;
+  width: 100% !important;
+ }
+ .btn-sm-search .btn-search {
+  position: static !important;
+   border-radius:0 !important ;
+   padding:10px 0;
+   width:100% !important;
+ }
+ .funpart b {
+  font-size:var(--font18) ;
+}
+ .funpart span {
+  font-size:var(--font14) ;
+}
+
+.fooContant ul li{
+    
+  width:auto;
+  float:none;
+
+}
+
+.fooContant ul li:first-child {
+  display:inline-block ;
+  width:auto;
+  text-align:left;
+}
+
+
+
+}
+
+@media (max-width: 768px) { 
+
+  .fooContant ul li{
+    
+    width: 50%;
+    float: left;
+  
+  }
+  
+  .fooContant ul li:first-child {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+}
+
+@media (max-width: 575px) {
+
+
+  .funpart b {
+    font-size:var(--font14) ;
+  }
+
+  .funpart span {
+    font-size:var(--font12) ;
+  }
+
+
+
+}
